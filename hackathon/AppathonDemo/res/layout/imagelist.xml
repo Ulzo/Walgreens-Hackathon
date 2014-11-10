@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<TextView android:layout_width="fill_parent"
+    		       android:layout_height="30dp"
+    		       android:text="Quick Print"
+    		       android:textColor="#FFFFFF"
+    		       android:background="#F62817"
+    		       android:textSize="18sp"
+    		       android:typeface="serif"
+    		       android:gravity="center"/>
+ 		
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+		<ListView
+		    android:id="@+id/listView1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/quickprintbtn"
+		    android:divider="#000000" >
+			
+        </ListView>
+       
+        <Button
+            android:id="@+id/quickprintbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="onClick"
+            android:text="Quick Print" />
+    </RelativeLayout>
+
+</LinearLayout>
